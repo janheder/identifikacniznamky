@@ -1,0 +1,92 @@
+
+<nav class="o-navMain">
+  <div class="o-navMain__navToggler m-navToggler" id="js-navToggler">
+    <div class="a-icon -hamburger m-navToggler__icon"></div>
+  </div>
+  <div class="o-navMain__logo m-navLogo"><a class="m-navLogo__link" href="#"><img class="m-navLogo__img" src="undefinedimg/logo.svg" alt="" title=""/></a></div>
+  <nav class="o-navProducts" id="js-navProducts">
+    <div class="o-navProducts__user m-navUserMenu">
+      <div class="m-navUserMenu__heading" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser"><span class="a-icon -user -white m-navUserMenu__img"></span>
+        <div class="m-navUserMenu__username">Petr Novák</div><span class="a-icon -cheveron -white m-navUserMenu__cheveron"> </span>
+      </div>
+      <div class="collapse m-navUserMenu__content" id="collapseUser"><a class="m-navUserMenu__link" href="#"><span class="a-icon -personalInfo m-navUserMenu__icon"></span> Změna osobních údajů</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -calendar m-navUserMenu__icon"></span> Historie objednávek</a><a class="m-navUserMenu__link" href="#"><span class="a-icon -logOut m-navUserMenu__icon"></span> Odhlásit</a></div>
+    </div>
+    <!--
+    <div class="o-navProducts__user m-navUserMenu">
+    	<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
+    		<span class="a-icon -user -white m-navUserMenu__img"></span>
+    		<div class="m-navUserMenu__username">Přihlášení</div>
+    	</a>
+    </div>
+    
+    
+    -->
+    <div class="accordion o-navProducts__accordion" id="accordionProducts">
+      <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Nabídka známek</a><a class="o-navProducts__linkDesktop" href="#">Nabídka známek</a></div>
+      <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">O nás</a><a class="o-navProducts__linkDesktop" href="#">O nás 	</a></div>
+      <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Velkoobchod</a><a class="o-navProducts__linkDesktop" href="#">Velkoobchod</a></div>
+      <div class="o-navProducts__item"><a class="o-navProducts__link" href="#">Kontakty</a><a class="o-navProducts__linkDesktop" href="#">Kontakty</a></div>
+    </div>
+  </nav>
+  <div class="m-navProductsClose" id="js-navProductsClose"><span class="a-icon -cross -white"></span></div>
+  <!--
+  <a class="o-navMain__user m-navUser" href="#" data-toggle="modal" data-target="#modal-login">
+  	<div class="a-icon -user -grey m-navUser__icon"></div>
+  	<div class="m-navUser__info"><span class="m-navUser__title">Přihlášení</span></div>
+  </a>
+  
+  -->
+  <div class="o-navMain__user m-navUser" data-toggle="collapse" data-target="#collapseNavUser" aria-expanded="false" aria-controls="collapseNavUser">
+    <div class="a-icon -user -grey m-navUser__icon"></div>
+    <div class="m-navUser__info"><span class="m-navUser__text">Přihlášen jako</span><span class="m-navUser__title">Petr Novák</span></div>
+    <div class="collapse m-navUser__collapse" id="collapseNavUser" aria-labelledby="collapseNavUser"><a class="m-navUser__collapseLink" href="#">Změna osobních údajů</a><a class="m-navUser__collapseLink" href="#">Historie objednávek</a><a class="m-navUser__collapseLink" href="#">Odhlásit</a></div>
+  </div>
+  <!--
+  <a class="o-navMain__cart m-navCart" href="#">
+  	<div class="m-navCart__iconWrap">
+  		<div class="a-icon -cart -grey m-navCart__icon"></div>
+  	</div>
+  	<div class="m-navCart__info"><span class="m-navCart__title">Nákupní košík</span></div>
+  </a>
+  
+  -->
+  <div class="o-navMain__cart m-navCart -active"><a class="m-navCart__desktopLink" href="#"></a>
+    <div class="m-navCart__toggle" data-toggle="collapse" data-target="#collapseNavCart" aria-expanded="false" aria-controls="collapseNavCart">
+      <div class="m-navCart__iconWrap">
+        <div class="a-icon -cart -red m-navCart__icon">
+          <div class="m-navCart__icoNumber">2</div>
+        </div>
+      </div>
+      <div class="m-navCart__info"><span class="m-navCart__text">Košík /</span><span class="m-navCart__title">859 Kč</span></div>
+      <div class="collapse m-navCart__collapse" id="collapseNavCart" aria-labelledby="collapseNavCart">
+        <div class="m-navCart__collapseItem">
+          <div class="m-navCart__collapseThumb"><img class="m-navCart__collapseImg lazy" src="undefinedimg/placeholder-60x60.png" data-src="undefinedimg/product-thumb-small.jpg" alt="#" title="#"/></div>
+          <div class="m-navCart__collapseInfo">
+            <div class="m-navCart__collapseName">Postel Angelika 160/200 cm masiv borovice</div>
+            <div class="m-navCart__collapsePrice">2 000 Kč</div>
+            <div class="m-navCart__collapseStock">Skladem</div>
+          </div>
+        </div>
+        <div class="m-navCart__collapseItem">
+          <div class="m-navCart__collapseThumb"><img class="m-navCart__collapseImg lazy" src="undefinedimg/placeholder-60x60.png" data-src="undefinedimg/product-thumb-small.jpg" alt="#" title="#"/></div>
+          <div class="m-navCart__collapseInfo">
+            <div class="m-navCart__collapseName">Postel Angelika 160/200 cm masiv borovice</div>
+            <div class="m-navCart__collapsePrice">2 000 Kč</div>
+            <div class="m-navCart__collapseStock">Skladem</div>
+          </div>
+        </div>
+        <div class="m-navCart__collapseOverview">
+          <div class="m-navCart__collapsePriceWrap">
+            <div class="m-navCart__collapseTitle">Celková cena</div>
+            <div class="m-navCart__collapseText">Včetně DPH</div>
+          </div>
+          <div class="m-navCart__collapseSum">2 000 Kč</div>
+        </div>
+        <div class="m-navCart__collapseShipping">Nakupte ještě za 1077 Kč a máte Dopravu zdarma	</div>
+        <div class="m-navCart__collapseBtn"><a class="btn -small -fullWidth" href="#">Objednat zboží</a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="a-darkOverlay" id="js-darkOverlay"></div>
+<div class="a-navPush"></div>

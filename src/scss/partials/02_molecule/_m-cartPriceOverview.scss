@@ -1,0 +1,25 @@
+.m-cartPriceOverview{
+    background: $bg-white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 0px;
+    border-radius: $border-radius-primary;
+}
+.m-cartPriceOverview__text{
+    @include f-18-primary-regular;
+    margin: 0;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.m-cartPriceOverview__price{
+    @include f-18-primary-semibold;
+    color: $text-red;
+    margin: 0;
+    text-transform: uppercase;
+}
+.m-cartPriceOverview__priceNumber{
+    
+}

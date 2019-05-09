@@ -1,0 +1,45 @@
+nav.o-navProducts(id="js-navProducts")
+
+
+	.o-navProducts__user.m-navUserMenu
+		.m-navUserMenu__heading(data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser")
+			span.a-icon.-user.-white.m-navUserMenu__img
+			.m-navUserMenu__username Petr Novák
+			span.a-icon.-cheveron.-white.m-navUserMenu__cheveron 
+
+		.collapse.m-navUserMenu__content(id="collapseUser")
+			a.m-navUserMenu__link(href="#") #[span.a-icon.-personalInfo.m-navUserMenu__icon] Změna osobních údajů
+			a.m-navUserMenu__link(href="#") #[span.a-icon.-calendar.m-navUserMenu__icon] Historie objednávek
+			a.m-navUserMenu__link(href="#") #[span.a-icon.-logOut.m-navUserMenu__icon] Odhlásit
+
+
+	//
+		<div class="o-navProducts__user m-navUserMenu">
+			<a class="m-navUserMenu__heading" data-toggle="modal" data-target="#modal-login">
+				<span class="a-icon -user -white m-navUserMenu__img"></span>
+				<div class="m-navUserMenu__username">Přihlášení</div>
+			</a>
+		</div>
+
+		
+	.accordion.o-navProducts__accordion(id="accordionProducts")
+
+
+		.o-navProducts__item
+			a.o-navProducts__link(href="#") Nabídka známek
+			a.o-navProducts__linkDesktop(href="#") Nabídka známek
+
+		.o-navProducts__item
+			a.o-navProducts__link(href="#") O nás
+			a.o-navProducts__linkDesktop(href="#") O nás 	
+
+		.o-navProducts__item
+			a.o-navProducts__link(href="#") Velkoobchod
+			a.o-navProducts__linkDesktop(href="#") Velkoobchod
+
+		.o-navProducts__item
+			a.o-navProducts__link(href="#") Kontakty
+			a.o-navProducts__linkDesktop(href="#") Kontakty
+
+.m-navProductsClose(id="js-navProductsClose")
+	span.a-icon.-cross.-white

@@ -1,0 +1,37 @@
+.o-cartDeliveryForm{
+    padding: 4rem 2rem;
+    background: $bg-white;
+
+    .m-cartButtons{
+        max-width: 600px;
+        margin: 0 auto;  
+    }
+    .m-formGroup.-radiobutton {
+        margin-bottom: 10px;
+    }
+}
+.o-cartDeliveryForm__title{
+    @include f-24-primary-semibold;
+    margin: 0rem 0 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.o-cartDeliveryForm__col{
+    margin: 4rem 0;
+}
+
+.o-cartDeliveryForm__item{
+    padding-bottom: 1px;
+    max-width: 600px;
+    margin-bottom: -20px;
+    margin: 0 auto;
+
+    .m-formGroup__price  {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .o-cartDeliveryForm__title{
+        text-align: center;
+    }
+}
