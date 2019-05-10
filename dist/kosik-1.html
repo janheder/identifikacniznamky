@@ -153,7 +153,7 @@
               <div class="m-navCart__collapseItem">
                 <div class="m-navCart__collapseThumb"><img class="m-navCart__collapseImg lazy" src="img/placeholder-60x60.png" data-src="img/product-thumb-small.jpg" alt="#" title="#"></div>
                 <div class="m-navCart__collapseInfo">
-                  <div class="m-navCart__collapseName">Postel Angelika 160/200 cm masiv borovice</div>
+                  <div class="m-navCart__collapseName">U.S. DOG TAGS Stříbrná</div>
                   <div class="m-navCart__collapsePrice">2 000 Kč</div>
                   <div class="m-navCart__collapseStock">Skladem</div>
                 </div>
@@ -161,7 +161,7 @@
               <div class="m-navCart__collapseItem">
                 <div class="m-navCart__collapseThumb"><img class="m-navCart__collapseImg lazy" src="img/placeholder-60x60.png" data-src="img/product-thumb-small.jpg" alt="#" title="#"></div>
                 <div class="m-navCart__collapseInfo">
-                  <div class="m-navCart__collapseName">Postel Angelika 160/200 cm masiv borovice</div>
+                  <div class="m-navCart__collapseName">U.S. DOG TAGS Stříbrná</div>
                   <div class="m-navCart__collapsePrice">2 000 Kč</div>
                   <div class="m-navCart__collapseStock">Skladem</div>
                 </div>
@@ -173,7 +173,6 @@
                 </div>
                 <div class="m-navCart__collapseSum">2 000 Kč</div>
               </div>
-              <div class="m-navCart__collapseShipping">Nakupte ještě za 1077 Kč a máte Dopravu zdarma	</div>
               <div class="m-navCart__collapseBtn"><a class="btn -small -fullWidth" href="#">Objednat zboží</a></div>
             </div>
           </div>
@@ -225,7 +224,7 @@
             </div>
             <div class="m-cartItemSingle__col-2">  
               <div class="m-cartItemSingle__name-wrap"><a class="m-cartItemSingle__name" href="#">U.S. DOG TAGS Stříbrná</a>
-                <p class="m-cartItemSingle__stock">Detail ražby  </p>
+                <p class="m-cartItemSingle__stock" data-toggle="modal" data-target="#modal-razba">Detail ražby  </p>
               </div>
               <div class="m-cartItemSingle__inner">   
                 <div class="m-cartItemSingle__qty-wrap"> 
@@ -255,7 +254,7 @@
             </div>
             <div class="m-cartItemSingle__col-2">  
               <div class="m-cartItemSingle__name-wrap"><a class="m-cartItemSingle__name" href="#">U.S. DOG TAGS Stříbrná</a>
-                <p class="m-cartItemSingle__stock">Detail ražby  </p>
+                <p class="m-cartItemSingle__stock" data-toggle="modal" data-target="#modal-razba">Detail ražby  </p>
               </div>
               <div class="m-cartItemSingle__inner">   
                 <div class="m-cartItemSingle__qty-wrap"> 
@@ -285,7 +284,7 @@
             </div>
             <div class="m-cartItemSingle__col-2">  
               <div class="m-cartItemSingle__name-wrap"><a class="m-cartItemSingle__name" href="#">U.S. DOG TAGS Stříbrná</a>
-                <p class="m-cartItemSingle__stock">Detail ražby  </p>
+                <p class="m-cartItemSingle__stock" data-toggle="modal" data-target="#modal-razba">Detail ražby  </p>
               </div>
               <div class="m-cartItemSingle__inner">   
                 <div class="m-cartItemSingle__qty-wrap"> 
@@ -307,9 +306,20 @@
               </div>
             </div>
           </div>
-          <div class="m-cartPriceOverview">
-            <p class="m-cartPriceOverview__text">Celková cena s DPH:</p>
-            <h3 class="m-cartPriceOverview__price"><span class="m-cartPriceOverview__priceNumber">65 599</span> Kč</h3>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="m-cartPriceOverview">
+                <p class="m-cartPriceOverview__text">Slevový kód:</p>
+                <div class="o-form__group m-formGroup">
+                  <input class="m-formGroup__input" type="text" name="slevovy_kod" id="slevovy_kod" placeholder=" ">
+                  <label class="m-formGroup__label" for="slevovy_kod">Slevový kód</label><span class="m-formGroup__error">Neplatný slevový kód</span><span class="m-formGroup__success"></span>
+                </div>
+              </div>
+              <div class="m-cartPriceOverview">
+                <p class="m-cartPriceOverview__text">Celková cena s DPH:</p>
+                <h3 class="m-cartPriceOverview__price"><span class="m-cartPriceOverview__priceNumber">65 599</span> Kč</h3>
+              </div>
+            </div>
           </div>
           <div class="m-cartButtons"><a class="btn -dark" href="#"><span class="a-btnIcon -rotate180"><span class="a-icon -cheveron -white"></span></span> Zpět do obchodu</a>
             <button class="btn" type="submit" id="cart-form-submit">Osobní údaje <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span></button>
@@ -317,6 +327,37 @@
         </form>
       </div>
     </main>
+    <div class="modal fade" id="modal-razba" tabindex="-1" role="dialog" aria-labelledby="modal-razba-heading" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered o-modal__dialog" role="document">
+        <div class="modal-content o-modal__content">
+          <div class="modal-header o-modal__header">
+            <h5 class="modal-title o-modal__title" id="modal-razba-heading">Detail ražby</h5>
+          </div>
+          <div class="modal-body o-modal__body">
+            <table class="table">
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer o-modal__footer">
+            <button class="btn -dark" type="button" data-dismiss="modal">Zavřit</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="o-footer">
       <section class="o-footerContacts">
         <div class="container o-footerContacts__container">
@@ -361,15 +402,15 @@
           </div>
         </div>
       </section>
-    </footer>
-    <section class="o-copyright">
-      <div class="container o-copyright__container">
-        <div class="o-copyright__wrap">
-          <h5 class="o-copyright__h5">Copyright © 2018 <a class="o-copyright__link" href="https://identifikacniznamky.cz">Identifikacniznamky.cz</a></h5>
-          <h5 class="o-copyright__pull">Vytvořeno v <a class="o-copyright__link" href="http://eline.cz">Eline.cz</a></h5>
+      <section class="o-copyright">
+        <div class="container o-copyright__container">
+          <div class="o-copyright__wrap">
+            <h5 class="o-copyright__h5">Copyright © 2018 <a class="o-copyright__link" href="https://identifikacniznamky.cz">Identifikacniznamky.cz</a></h5>
+            <h5 class="o-copyright__pull">Vytvořeno v <a class="o-copyright__link" href="http://eline.cz">Eline.cz</a></h5>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </footer>
     <!-- Popper for Bootstrap support-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script>

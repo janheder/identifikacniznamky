@@ -56,7 +56,7 @@ html(lang=lang)
                             .m-cartItemSingle__col-2   
                                 .m-cartItemSingle__name-wrap
                                     a.m-cartItemSingle__name(href="#") #{ProductName}
-                                    p.m-cartItemSingle__stock Detail ražby  
+                                    p.m-cartItemSingle__stock(data-toggle="modal" data-target="#modal-razba") Detail ražby  
 
                                 .m-cartItemSingle__inner    
                                     .m-cartItemSingle__qty-wrap 
@@ -75,10 +75,20 @@ html(lang=lang)
                                         p.m-cartItemSingle__sum #[span 18 546] Kč
                                     .m-cartItemSingle__delete-wrap
                                         a.a-icon.-crossCircle.-red(href="#")
+                    .row
+                        .col-12.col-md-6
+                            .m-cartPriceOverview
+                                p.m-cartPriceOverview__text Slevový kód:
+                                
+                                .o-form__group.m-formGroup
+                                    input.m-formGroup__input(type="text" name="slevovy_kod" id="slevovy_kod" placeholder=" ")
+                                    label.m-formGroup__label(for="slevovy_kod") Slevový kód
+                                    span.m-formGroup__error Neplatný slevový kód
+                                    span.m-formGroup__success
 
-                    .m-cartPriceOverview
-                        p.m-cartPriceOverview__text Celková cena s DPH:
-                        h3.m-cartPriceOverview__price #[span.m-cartPriceOverview__priceNumber 65 599] Kč
+                            .m-cartPriceOverview
+                                p.m-cartPriceOverview__text Celková cena s DPH:
+                                h3.m-cartPriceOverview__price #[span.m-cartPriceOverview__priceNumber 65 599] Kč
 
 
 
@@ -87,6 +97,35 @@ html(lang=lang)
                         a.btn.-dark(href="#") #[span.a-btnIcon.-rotate180 #[span.a-icon.-cheveron.-white]] Zpět do obchodu
                         button.btn(type="submit" id="cart-form-submit") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
                                 
+        .modal.fade(id="modal-razba" tabindex="-1" role="dialog" aria-labelledby="modal-razba-heading" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered.o-modal__dialog(role="document")
+                .modal-content.o-modal__content
+
+                    .modal-header.o-modal__header
+                        h5.modal-title.o-modal__title(id="modal-razba-heading") Detail ražby
+
+                    .modal-body.o-modal__body
+                        table.table
+                            tr
+                                td a
+                                td b
+                                td c
+                            tr
+                                td a
+                                td b
+                                td c
+                            tr
+                                td a
+                                td b
+                                td c
+
+
+
+
+                    .modal-footer.o-modal__footer
+                        button.btn.-dark(type="button" data-dismiss="modal") Zavřit
+          
+
 
         include partials/_footer.pug 
 

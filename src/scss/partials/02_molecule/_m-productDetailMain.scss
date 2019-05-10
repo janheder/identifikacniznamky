@@ -88,7 +88,8 @@
     padding-right: 2rem;
 }
 .m-productDetailMain__button{
-    padding: 0 6rem;
+    padding: 0 2rem;
+    flex-grow: 1;
     
     .m-productDetailMain__icon{
         height: 20px;

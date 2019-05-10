@@ -244,7 +244,11 @@ html(lang=lang)
                                         label.m-formGroup__label(for="register_form_register_toggler") Mám zájem o vytvoření účtu
 
                                 .collapse.o-form__groupCollapse(id="formRegisterCollapse")
-
+                                    .o-form__group.m-formGroup
+                                        input.m-formGroup__input(type="text" name="register_form_register_username" id="register_form_register_username" autocomplete="username" placeholder=" ")
+                                        label.m-formGroup__label(for="register_form_register_username") Uživatelské jméno
+                                        span.m-formGroup__error Neplatné jméno
+                                        span.m-formGroup__success
                                     .o-form__group.m-formGroup
                                         input.m-formGroup__input(type="password" name="register_form_register_password" id="register_form_register_password" autocomplete="password" placeholder=" ")
                                         label.m-formGroup__label(for="register_form_register_password") Heslo

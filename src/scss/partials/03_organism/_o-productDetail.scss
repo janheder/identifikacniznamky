@@ -18,3 +18,40 @@
         padding-left: 0px;
     }
 }
+.o-productDetail__form{
+    background: $bg-white;
+
+}
+.o-productDetail__formInner{
+    padding: 4rem 2rem;
+}
+.o-productDetail__title{
+    border-bottom: 1px solid $bg-light;
+    padding: 10px 20px;
+}
+.o-productDetail__markImg{
+    padding: 4rem 20px;
+    position: relative;
+}
+.o-productDetail__markDescription{
+    font-family: $font-family-secondary;
+    padding: 4rem 2rem;
+}
+.o-productDetail__markDescriptionTitle{
+    font-family: $font-family-primary;
+    display: block;
+}
+.o-productDetail__markChars{
+    font-size: 1.8rem;
+    display: block;
+}
+.o-productDetail__markNote{
+    font-size: 1.4rem;
+    display: block;
+    padding: 2rem 0;
+}
+.o-productDetail__markNotice{
+    color: #8B7C69;
+    font-size: 1.4rem;
+    display: block;
+}

@@ -12,55 +12,54 @@ html(lang=lang)
             include partials/_breadcrumb-transparent.pug
             .container.o-pageHeading__container
                 h1.o-pageHeading__title Registrace
-                p.o-pageHeading__text Jako registrovaný uživatel získáte slevu 1% na veškeré zboží a můžete sledovat průběh vyřízení své objednávky.
         main
             .container
                 .row
-                    .col-12.col-sm-12.col-md-12.col-lg-1
+                    .col-12.col-sm-12.col-md-12.col-lg-3
 
 
-                    .col-12.col-sm-12.col-md-12.col-lg-10
+                    .col-12.col-sm-12.col-md-12.col-lg-6
                         form.o-form.-noMargin(method="post" action="" name="register_form" id="register_form")
 
-                            .o-form__divider.m-formDivider Osobní údaje
+                         
 
                             .row
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup
                                         input.m-formGroup__input(type="text" name="register_form_name" id="register_form_name" autocomplete="given-name" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_name") Jméno
                                         span.m-formGroup__error Neplatné jméno
                                         span.m-formGroup__success
                                         
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup       
                                         input.m-formGroup__input(type="text" name="register_form_surname" id="register_form_surname" autocomplete="family-name" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_surname") Příjmení
                                         span.m-formGroup__error Neplatné příjmení
                                         span.m-formGroup__success
 
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup       
                                         input.m-formGroup__input(type="text" name="register_form_username" id="register_form_username" autocomplete="username" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_username") Uživatelské jméno
                                         span.m-formGroup__error Neplatné uživatelské jméno
                                         span.m-formGroup__success
 
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup
                                         input.m-formGroup__input(type="password" name="register_form_password" id="register_form_password" autocomplete="password" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_password") Heslo
                                         span.m-formGroup__error Neplatné heslo
                                         span.m-formGroup__success
 
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup
                                         input.m-formGroup__input(type="email" name="register_form_email" id="register_form_email" autocomplete="email" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_email") Emailová adresa
                                         span.m-formGroup__error Neplatný email
                                         span.m-formGroup__success
                                         
-                                .col-12.col-md-6
+                                .col-12.col-md-12
                                     .o-form__group.m-formGroup
                                         input.m-formGroup__input(type="tel" name="register_form_tel" id="register_form_tel" autocomplete="tel" required placeholder=" ")
                                         label.m-formGroup__label(for="register_form_tel") Telefonní číslo
@@ -68,7 +67,7 @@ html(lang=lang)
                                         span.m-formGroup__success
 
 
-                            .o-form__divider.m-formDivider Adresa
+     
 
                             .row
                                 .col-12.col-md-9
@@ -99,20 +98,15 @@ html(lang=lang)
                                         span.m-formGroup__error Neplatné PSČ
                                         span.m-formGroup__success
 
-                                .col-12.col-md-6
-                                    .o-form__group.m-formGroup.-radiobutton
-                                        input.m-formGroup__input(type="radio" name="register_form_country" id="register_form_country_cz" required checked)
-                                        span.m-formGroup__radiobutton.a-radiobutton
-                                        label.m-formGroup__label(for="register_form_country_cz") Česká republika
+                                .col-12.col-md-12
+                                    .o-form__group.m-formGroup
+                                        select.m-formGroup__input(name="register_form_country" id="register_form_country" required)
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
 
-                                .col-12.col-md-6
-                                    .o-form__group.m-formGroup.-radiobutton
-                                        input.m-formGroup__input(type="radio" name="register_form_country" id="register_form_country_sk" required)
-                                        span.m-formGroup__radiobutton.a-radiobutton
-                                        label.m-formGroup__label(for="register_form_country_sk") Slovensko
 
                             .row
-                                .col-12.col-md-6
+                                .col-12.col-md-12
 
                                     .o-form__groupToggler(data-toggle="collapse" href="#formBillingCollapse" aria-expanded="false" aria-controls="formBillingCollapse")
                                         .o-form__group.m-formGroup.-switch
@@ -170,18 +164,12 @@ html(lang=lang)
                                             span.m-formGroup__error Neplatné PSČ
                                             span.m-formGroup__success
                 
-                                        .o-form__group.m-formGroup.-radiobutton
-                                            input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_cz" checked)
-                                            span.m-formGroup__radiobutton.a-radiobutton
-                                            label.m-formGroup__label(for="register_form_billing_postal_country_cz") Česká republika
-
-                                        .o-form__group.m-formGroup.-radiobutton
-                                            input.m-formGroup__input(type="radio" name="register_form_billing_postal_country" id="register_form_billing_postal_country_sk" )
-                                            span.m-formGroup__radiobutton.a-radiobutton
-                                            label.m-formGroup__label(for="register_form_billing_postal_country_sk") Slovensko
+                                        select.m-formGroup__input(name="register_form_billing_postal_country" id="register_form_billing_postal_country" required)
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
 
 
-                                .col-12.col-md-6
+                                .col-12.col-md-12
 
                                     .o-form__groupToggler(data-toggle="collapse" href="#formShippingCollapse" aria-expanded="false" aria-controls="formShippingCollapse")
                                         .o-form__group.m-formGroup.-switch
@@ -227,18 +215,12 @@ html(lang=lang)
                                             span.m-formGroup__error Neplatné PSČ
                                             span.m-formGroup__success
 
-                                        .o-form__group.m-formGroup.-radiobutton
-                                            input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_cz" checked)
-                                            span.m-formGroup__radiobutton.a-radiobutton
-                                            label.m-formGroup__label(for="register_form_shipping_postal_country_cz") Česká republika
-
-                                        .o-form__group.m-formGroup.-radiobutton
-                                            input.m-formGroup__input(type="radio" name="register_form_shipping_postal_country" id="register_form_shipping_postal_country_sk" )
-                                            span.m-formGroup__radiobutton.a-radiobutton
-                                            label.m-formGroup__label(for="register_form_shipping_postal_country_sk") Slovensko
+                                        select.m-formGroup__input(name="register_form_shipping_postal_country" id="register_form_shipping_postal_country" required)
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
 
 
-                            .o-form__divider.m-formDivider Ostatní
+  
 
 
                             .o-form__group.m-formGroup.-checkbox
@@ -261,7 +243,7 @@ html(lang=lang)
                                 button.btn.-fullWidth(type="submit" id="register_form_submit") Vytvořit účet #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
 
 
-                    .col-12.col-sm-12.col-md-12.col-lg-1
+                    .col-12.col-sm-12.col-md-12.col-lg-3
 
 
         include partials/_footer.pug
