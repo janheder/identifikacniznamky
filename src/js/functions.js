@@ -135,6 +135,112 @@ var carousel_main = new Swiper('.m-heroCarousel__content', {
   },
 });
 
+
+
+$('input[name="product_row1"]').keyup(function(){
+  $(".o-productDetail__product1_row1").text($(this).val());
+});
+$('input[name="product_row2"]').keyup(function(){
+    $(".o-productDetail__product1_row2").text($(this).val());
+});
+$('input[name="product_row3"]').keyup(function(){
+    $(".o-productDetail__product1_row3").text($(this).val());
+});
+$('input[name="product_row4"]').keyup(function(){
+    $(".o-productDetail__product1_row4").text($(this).val());
+});
+$('input[name="product_row5"]').keyup(function(){
+    $(".o-productDetail__product1_row5").text($(this).val());
+});
+
+
+$('input[name="product2_row1"]').keyup(function(){
+    $(".o-productDetail__product2_row1").text($(this).val());
+});
+$('input[name="product2_row2"]').keyup(function(){
+    $(".o-productDetail__product2_row2").text($(this).val());
+});
+$('input[name="product2_row3"]').keyup(function(){
+    $(".o-productDetail__product2_row3").text($(this).val());
+});
+$('input[name="product2_row4"]').keyup(function(){
+    $(".o-productDetail__product2_row4").text($(this).val());
+});
+$('input[name="product2_row5"]').keyup(function(){
+    $(".o-productDetail__product2_row5").text($(this).val());
+});
+
+
+
+$("#btn-center-1").click(function(){
+    $('.o-productDetail__product1_row1, .o-productDetail__product1_row2, .o-productDetail__product1_row3, .o-productDetail__product1_row4, .o-productDetail__product1_row5').css("text-align","center");
+});
+$("#btn-left-1").click(function(){
+    $('.o-productDetail__product1_row1, .o-productDetail__product1_row2, .o-productDetail__product1_row3, .o-productDetail__product1_row4, .o-productDetail__product1_row5').css("text-align","left");
+});
+$("#btn-remove-1").click(function(){
+    $('input[name="product_row1"], input[name="product_row2"], input[name="product_row3"], input[name="product_row4"], input[name="product_row5"]').val("");
+    $('.o-productDetail__product1_row1, .o-productDetail__product1_row2, .o-productDetail__product1_row3, .o-productDetail__product1_row4, .o-productDetail__product1_row5').text("");
+});
+$("#btn-copy-1").click(function(){
+    var row1_1 = $('input[name="product_row1"]').val();
+    var row1_2 = $('input[name="product_row2"]').val();
+    var row1_3 = $('input[name="product_row3"]').val();
+    var row1_4 = $('input[name="product_row4"]').val();
+    var row1_5 = $('input[name="product_row5"]').val();
+
+    $('input[name="product2_row1"]').val(row1_1);
+    $('.o-productDetail__product2_row1').text(row1_1);
+
+    $('input[name="product2_row2"]').val(row1_2);
+    $('.o-productDetail__product2_row2').text(row1_2);
+
+    $('input[name="product2_row3"]').val(row1_3);
+    $('.o-productDetail__product2_row3').text(row1_3);
+
+    $('input[name="product2_row4"]').val(row1_4);
+    $('.o-productDetail__product2_row4').text(row1_4);
+
+    $('input[name="product2_row5"]').val(row1_5);
+    $('.o-productDetail__product2_row5').text(row1_5);
+});
+
+
+$("#btn-center-2").click(function(){
+    $('.o-productDetail__product2_row1, .o-productDetail__product2_row2, .o-productDetail__product2_row3, .o-productDetail__product2_row4, .o-productDetail__product2_row5').css("text-align","center");
+});
+$("#btn-left-2").click(function(){
+    $('.o-productDetail__product2_row1, .o-productDetail__product2_row2, .o-productDetail__product2_row3, .o-productDetail__product2_row4, .o-productDetail__product2_row5').css("text-align","left");
+});
+$("#btn-remove-2").click(function(){
+    $('input[name="product2_row1"], input[name="product2_row2"], input[name="product2_row3"], input[name="product2_row4"], input[name="product2_row5"]').val("");
+    $('.o-productDetail__product2_row1, .o-productDetail__product2_row2, .o-productDetail__product2_row3, .o-productDetail__product2_row4, .o-productDetail__product2_row5').text("");
+});
+
+$("#btn-copy-2").click(function(){
+    var row2_1 = $('input[name="product2_row1"]').val();
+    var row2_2 = $('input[name="product2_row2"]').val();
+    var row2_3 = $('input[name="product2_row3"]').val();
+    var row2_4 = $('input[name="product2_row4"]').val();
+    var row2_5 = $('input[name="product2_row5"]').val();
+
+    $('input[name="product_row1"]').val(row2_1);
+    $('.o-productDetail__product1_row1').text(row2_1);
+
+    $('input[name="product_row2"]').val(row2_2);
+    $('.o-productDetail__product1_row2').text(row2_2);
+
+    $('input[name="product_row3"]').val(row2_3);
+    $('.o-productDetail__product1_row3').text(row2_3);
+
+    $('input[name="product_row4"]').val(row2_4);
+    $('.o-productDetail__product1_row4').text(row2_4);
+
+    $('input[name="product_row5"]').val(row2_5);
+    $('.o-productDetail__product1_row5').text(row2_5);
+});
+
+
 // =============================================================================
 // VARIOUS TOGGLES AND CONTROLS
 // =============================================================================

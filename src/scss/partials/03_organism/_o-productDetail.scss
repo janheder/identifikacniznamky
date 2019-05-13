@@ -20,7 +20,7 @@
 }
 .o-productDetail__form{
     background: $bg-white;
-
+    margin-bottom: 20px;
 }
 .o-productDetail__formInner{
     padding: 4rem 2rem;
@@ -32,6 +32,22 @@
 .o-productDetail__markImg{
     padding: 4rem 20px;
     position: relative;
+}
+.o-productDetail__productType{
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    right: 90px;
+    font-family: "Sumana";
+    color: $text-white;
+    font-size: 18px;
+
+    span{
+        display: block;
+        height: 2.4rem;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
 }
 .o-productDetail__markDescription{
     font-family: $font-family-secondary;
@@ -54,4 +70,16 @@
     color: #8B7C69;
     font-size: 1.4rem;
     display: block;
+}
+
+.o-productDetail_btns .btn-light{
+    background: #F8F6F2;
+    color: $text-primary;
+    font-family: $font-family-secondary;
+    font-size: 1.5rem;
+    text-transform: none;
+    font-weight: 600;
+    width: 45%;
+    padding: 0 1rem;
+    margin: 0.5rem;
 }

@@ -72,6 +72,7 @@
 	color: $text-green;
 	font-family: $font-family-secondary;
 	font-weight: 600;
+	cursor: pointer;
 }	
 .m-cartItemSingle__inner{
 	width: 60%;
@@ -116,11 +117,11 @@
 	margin: 0;
 	text-transform: uppercase;
 }
-/*
-.m-cartItemSingle__sum-wrap{
 
+.m-cartItemSingle__sum-wrap{
+	padding-right: 15px;
 }
-*/
+
 .m-cartItemSingle__sum{
 	color: $text-red;
     font-size: 1.8rem;

@@ -1,5 +1,8 @@
 .m-productDetailMain{
-
+    &.-padding{
+        padding: 20px;
+        background: $bg-white;
+    }
 }
 .m-productDetailMain__title{
     text-align: left;
@@ -7,6 +10,7 @@
     margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
+    font-size: 2.4rem;
 }
 .m-productDetailMain__misc{
     display: flex;
@@ -107,6 +111,10 @@
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
+
+&.-nomargin{
+    margin-top: 0;
+}
 }
 .m-productDetailMain__stockText{
     @include f-14-dark-regular;
