@@ -190,19 +190,19 @@ $("#btn-copy-1").click(function(){
     var row1_4 = $('#product_row4').val();
     var row1_5 = $('#product_row5').val();
 
-    $('#product_row1').val(row1_1);
+    $('#product2_row1').val(row1_1);
     $('.o-productDetail__product2_row1').text(row1_1);
 
-    $('#product_row2').val(row1_2);
+    $('#product2_row2').val(row1_2);
     $('.o-productDetail__product2_row2').text(row1_2);
 
-    $('#product_row3').val(row1_3);
+    $('#product2_row3').val(row1_3);
     $('.o-productDetail__product2_row3').text(row1_3);
 
-    $('#product_row4').val(row1_4);
+    $('#product2_row4').val(row1_4);
     $('.o-productDetail__product2_row4').text(row1_4);
 
-    $('#product_row5').val(row1_5);
+    $('#product2_row5').val(row1_5);
     $('.o-productDetail__product2_row5').text(row1_5);
 });
 
@@ -229,16 +229,16 @@ $("#btn-copy-2").click(function(){
     $('#product2_row1').val(row2_1);
     $('.o-productDetail__product1_row1').text(row2_1);
 
-    $('#product2_row2').val(row2_2);
+    $('#product_row2').val(row2_2);
     $('.o-productDetail__product1_row2').text(row2_2);
 
-    $('#product2_row3').val(row2_3);
+    $('#product_row3').val(row2_3);
     $('.o-productDetail__product1_row3').text(row2_3);
 
-    $('#product2_row4"]').val(row2_4);
+    $('#product_row4"]').val(row2_4);
     $('.o-productDetail__product1_row4').text(row2_4);
 
-    $('#product2_row5"]').val(row2_5);
+    $('#product_row5"]').val(row2_5);
     $('.o-productDetail__product1_row5').text(row2_5);
 });
 
