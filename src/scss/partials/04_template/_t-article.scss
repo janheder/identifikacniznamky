@@ -357,3 +357,17 @@ margin: 10px ;
     border: 1px solid $border-primary;
     border-top: 0;
 }
+
+
+
+.m-productDetailCarousel__wrap .swiper-slide{width:100% !important;}
+@media (max-width: 991px){
+.o-pageHeading {
+    padding: 2rem 0 2rem 0;
+}
+}
+.o-productDetail__productType span{
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 20px;
+}

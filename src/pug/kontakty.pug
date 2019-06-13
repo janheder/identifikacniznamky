@@ -6,7 +6,6 @@ html(lang=lang)
         include partials/_modal-login.pug
         header.o-header
             include partials/_navMain.pug
-            include partials/_navProducts.pug
         include partials/_modal-reklamace.pug
 
         section.o-pageHeading
@@ -20,51 +19,54 @@ html(lang=lang)
                         .row
                             .col-12.col-sm-12.col-md-6
                                 .m-contactItem
-                                    h2.m-contactItem__title Zákaznická linka
-                                    .m-contactItem_content
-                                        strong.m-contactItem__subtitle Provozní doba: Po-Pá 8.00–16.00
-                                        .m-contactItem__phoneWrap
-                                            span.a-icon.-phone.m-contactItem__icon 
-                                            .m-contactItem__phone +420 606 311 796
-                                        p.m-contactItem__text Na tomto telefonním čísle zjistíte obecné informace o dostupnostech jednotlivých produktů, době dodání, technické specifikace a máte možnost provést telefonickou objednávku zboží.
-                                        strong.m-contactItem__subtitle Mimo pracovní dobu, mailově na info@best-nabytek.cz
+                                    h2.m-contactItem__title Kontaktní údaje:
+                                    strong.m-contactItem__subtitle Kamila Dluhošová
+                                    strong.m-contactItem__subtitle Riegrova 857
+                                    strong.m-contactItem__subtitle 73801 Frýdek-Místek
+                                    br
+                                    strong.m-contactItem__subtitle IČ : 70254753 - Neplátce DPH
+                                    .m-contactItem__phoneWrap
+                                        span.a-icon.-phone.m-contactItem__icon 
+                                        .m-contactItem__phone +420 558 638 206
+                                    strong.m-contactItem__subtitle e-mail : info@identifikacniznamky.cz
+                                    p.m-contactItem__text Živnostenský list zapsán u obecního živnostenského úřadu ve Frýdku-Místku dne 1.3.2000 č.j.: 005189/00/08447A
 
-
-                            .col-12.col-sm-12.col-md-6
-                                .m-contactItem
-                                    h2.m-contactItem__title Stav objednávek
-                                    .m-contactItem_content
-                                        strong.m-contactItem__subtitle Provozní doba: Po-Pá 8.00–16.00
-                                        .m-contactItem__phoneWrap
-                                            span.a-icon.-phone.m-contactItem__icon 
-                                            .m-contactItem__phone +420 606 311 796
-                                        p.m-contactItem__text Na tomto telefonním čísle zjistíte stav objednávky.
-                                        strong.m-contactItem__subtitle Osobní odběr, pouze po předchozí tel. domluvě na +420 602 161 304
-                                        strong.m-contactItem__subtitle Mimo pracovní dobu, mailově na info@best-nabytek.cz
-
-                            .col-12.col-sm-12.col-md-6
-                                .m-contactItem
-                                    h2.m-contactItem__title Informace o přepravě zboží
-                                    .m-contactItem_content
-                                        strong.m-contactItem__subtitle Provozní doba: Po-Pá 8.00–16.00
-                                        .m-contactItem__phoneWrap
-                                            span.a-icon.-phone.m-contactItem__icon 
-                                            .m-contactItem__phone +420 602 764 755
-                                        strong.m-contactItem__subtitle Mimo pracovní dobu, mailově na info@best-nabytek.cz
 
 
                             .col-12.col-sm-12.col-md-6
                                 .m-contactItem
-                                    h2.m-contactItem__title Reklamace
+                                    h2.m-contactItem__title Bankovní spojení: ( pro platby převodem )
                                     .m-contactItem_content
-                                
-                                        strong.m-contactItem__subtitle Zde podávejte případné reklamace. Reklamaci provedete kliknutím na tlačítko níže s názvem REKLAMACE. Máte zde možnost přiložit fotografie a popsat případné nedostatky.
-                                        .m-contactItem__button
-                                            button.btn.-secondary(data-toggle="modal" data-target="#modal-reklamace") #[span.-icon.-envelope] Reklamační formulář
+                                        strong.m-contactItem__subtitle Raiffeisen BANK - Frýdek-Místek, Ostravská 2129
+                                        strong.m-contactItem__subtitle Č.ú. 3965952001/5500 Název účtu : Kamila Dluhošová 
+                                        strong.m-contactItem__subtitle IBAN: CZ4955000000003965952001 
+                                        strong.m-contactItem__subtitle SWIFT: RZBCCZPP 
+                                        br
+                                        strong.m-contactItem__subtitle Jako variabilní symbol vždy uvádějte číslo objednávky ! 
+
+                            .col-12.col-sm-12.col-md-6
+                                .m-contactItem
+                                    h2.m-contactItem__title PARTNERSKÉ PRODEJNY ( možno zboží osobně vyzvednout ) :
+                                    .m-contactItem_content
+                                        strong.m-contactItem__subtitle ARMY SHOP OSTRAVA - Vítkovice, Rudná 1117/30
+                                        .m-contactItem__phoneWrap
+                                            span.a-icon.-phone.m-contactItem__icon 
+                                            .m-contactItem__phone 596 632 384
+
+                                        strong.m-contactItem__subtitle ARMY SHOP FRÝDEK-MÍSTEK - náměstí Svobody č.3
+                                        .m-contactItem__phoneWrap
+                                            span.a-icon.-phone.m-contactItem__icon 
+                                            .m-contactItem__phone 558 433 775
+                            
+
+
 
 
                         .page-contact__map
-                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.657631663965!2d18.3637427160331!3d49.679587479376394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f710ff234161%3A0x732b453a9946a156!2zSmFuYSDEjGFwa2EgMzA5NywgRnLDvWRlaywgNzM4IDAxIEZyw71kZWstTcOtc3Rlaw!5e0!3m2!1scs!2scz!4v1550161260983" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20590.579440161444!2d18.257549978692705!3d49.82700253121457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e4a871451257%3A0x8e298255a93f9bab!2sArmy+Shop!5e0!3m2!1scs!2scz!4v1559037880299!5m2!1scs!2scz" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+                        .page-contact__map
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10327.471358806792!2d18.341606!3d49.6756281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa38faee564cca6f3!2sARMY+SHOP+-+Fr%C3%BDdek-M%C3%ADstek+-+GENERAL+ARMY%2C+spol.+s+r.o.!5e0!3m2!1scs!2scz!4v1559037924737!5m2!1scs!2scz" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
 
                         h3 Informační oznámení o EET
                         p "Podle zákona o evidenci tržeb je prodávající povinen  vystavit  kupujícímu  účtenku.  Zároveň  je povinen zaevidovat přijatou  tržbu  u správce  daně  online;  v  případě  technického  výpadku  pak  nejpozději  do 48 hodin.", eviduje-li poplatník v daném pokladním místě tržby v běžném režimu.
